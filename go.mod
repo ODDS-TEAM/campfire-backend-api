@@ -1,3 +1,3 @@
-module github.com/odds-team/campfire-backend-api
+module github.com/ODDS-TEAM/campfire-backend-api
 
 go 1.14
