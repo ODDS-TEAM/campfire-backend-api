@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ODDS-TEAM/campfire-backend-api/project"
 	"github.com/gorilla/mux"
 )
 
@@ -15,6 +16,7 @@ func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/health", HealthCheckHandler)
+	r.HandleFunc("/projects", project.ProjectHandler)
 
 	srv := &http.Server{
 		Handler:      r,
