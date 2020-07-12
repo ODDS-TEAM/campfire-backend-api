@@ -1,0 +1,6 @@
+CREATE TABLE projects (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(300) NOT NULL,
+    description TEXT,
+    UNIQUE(name)
+);
