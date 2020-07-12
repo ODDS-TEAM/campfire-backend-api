@@ -20,3 +20,6 @@ campfire-backend-api
 
 # Sqlite
 *.db
+
+# Mac
+.DS_Store
